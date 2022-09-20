@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Miriam Boutique || Comprar</title>
+    <link rel = "stylesheet" href = "buy.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Icons Redes Sociais -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Plus Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+  <!--Navbar-->
+  <div class="navbar">
+      <div class = "max-width"></div>
+          <div class="logo"><h1>MIRIAM BOUTIQUE</h1></div>
+          <div class="shop">
+              <a href="#"><i class='bx bx-user' title="Login/Cadastar"></i></a>
+              <a href="#"><i class='bx bx-heart' title="Favoritos"></i><span>0</span></a>
+              <a href="cart.html" class="cart-icon"><i class='bx bx-shopping-bag' title="Carrinho"></i><span>0</span></a>
+          </div>
+    
+          <ul class="menu">
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="roupas.html">Tops</a> </li> 
+              <li> <a href="roupas.html">Shorts</a> </li>   
+              <li> <a href="roupas.html">Vestidos</a> </li>
+              <li> <a href="roupas.html">Calçados</a> </li> 
+              <li> <a href="#roupas.html">Acessórios</a> </li>
+          </ul>
+      </div>
+  </div>
+
+    <section class="comprar" id="comprar">
+        <div class = "max-width">
+            <div class = "content">
+                <div class="buy">
+                    <div class="buy-img">
+                        <img src="dres2.png" alt="dres2">
+                        <p>Miriam Collection</p>
+                        <div class="solid">
+                            <div class="solid-up"></div>
+                        </div>
+                    </div>
+                
+                    <div class="buy-txt">
+                        <p><span>Vestido Manga Longa Ombro a Ombro</span></p><br>
+                        <p>Vestido de corte retangular com manga longa e ombros expostos. Fecho lateral com zíper oculto na costura.</p><br>
+                        <p><br>R$ 75,00</p>
+                        <form>
+                            <br><hr><br>
+                            <p id="price">Tamanho:</p>
+                            <input type="radio" name="size" value="ep" id="myradio1">
+                            <label for="myradio1">EP</label>
+                            
+                            <input type="radio" name="size" value="p" id="myradio2" required>
+                            <label for="myradio2">P</label>
+                            
+                            <input type="radio" name="size" value="m" id="myradio3">
+                            <label for="myradio3">M</label>
+                            
+                            <input type="radio" name="size" value="g" id="myradio4">
+                            <label for="myradio4">G</label>
+                            
+                            <input type="radio" name="size" value="eg" id="myradio5">
+                            <label for="myradio5">EG</label>
+                            <br><hr><br>
+                            <p id="price">Informação do Produto:</p>
+                            <p>
+                                Quantidade:     1 peça
+                                <br>Cor:        Preto
+                                <br>Estilo:  	Elegante
+                                <br>Estampa:	Nenhuma
+                                <br>Tecido:	    Elasticidade Alta
+                                <br>Material:	Poliéster
+                            </p><br>
+                            <br><br><hr>
+                            <p>Frete Gratis em pedidos acima de R$ 50,00</p>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <span class="cart-btn"></span>
+                            <button type="submit" class="cart-btn">Adicionar ao Carrinho</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="sugest" id="sugest">
+        <div class = "max-width">
+            <h2>Talvez lhe Interesse</h2>
+            <div class = "content">
+                <div class="products">
+                    <div class="products-uni">
+                        <a href ="dres3.html"><img src="dres3.png" alt="" title="Vestido Justo Cortado"></a>
+                        <p><span>R$ 100,00</span></p>
+                    </div>
+                
+                    <div class="products-uni">
+                        <a href ="dres1.html"><img src="dres1.png" alt="" title="Vestido Franzido com Alças"></a>
+                        <p><span>R$ 38,00</span></p>
+                    </div>
+        
+                    <div class="products-uni">
+                        <a href ="dres2.html"><img src="dres2.png" alt="" title="Vestido Manga Longa Ombro a Ombro"></a>
+                        <p><span>R$ 70,00</span></p>
+                    </div>
+
+                    <div class="products-uni">
+                        <a href ="dres3.html"><img src="dres3.png" alt="" title="Vestido Justo Cortado"></a>
+                        <p><span>R$ 100,00</span></p>
+                    </div>
+                </div>
+                <div class="info"><a href="#VerMais">Ver Mais</a></div>
+            </div>
+        </div>
+    </section>
+
+
+ <!--Sessão - Contato-->
+<section class="footer">
+    <div class="contact-union">
+        <div class="newsletter">
+            <div class="card">
+                <h2>Inscreva-se na nossa Newsletter</h2>
+                <div class="card-uni">
+                    <input type="text" id="usuario" autocomplete="off">
+                    <label for="usuario">E-mail</label>
+                </div>
+                <p>Fique por dentro das últimas novidades, tendências e promoções.</p>
+                <button type="submit"><span>Cadastrar</span></button>
+            </div>
+            <div class="networks">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+                <a href="#">Gmail</a>
+            </div>
+        </div>
+
+        <div class="desc">
+            <div class="desc-uni">
+                <span><p>Informações</p></span>
+                <p>Sobre a Miram Boutique</p>
+                <p>Programa de Cashback</p>
+                <p>Cupons de Desconto</p>
+                <p>Trabalhe Conosco</p>
+                <p>Políticas de Privacidade</p>
+            </div>
+
+            <div class="desc-uni">
+                <span><p>Destaques</p></span>
+                <p>Visite o nosso Blog</p>
+                <p>Looks para trabalho</p>
+                <p>A bota ideal para cada calça</p>
+                <p>Tendências Inverno 2022</p>
+                <p>Elegante sem Salto</p>
+                <p>Nossas Estampas Favoritas</p>
+            </div>
+
+            <div class="desc-uni">
+                <span><p>Ajuda e Suporte</p></span>
+                <p>Trocas e Devoluções</p>
+                <p>Política De Frete
+                <p>Devolução</p>
+                <p>Como Pedir</p>
+                <p>Como Rastrear</p>
+                <p>Guia De Tamanhos</p>
+                <p>Perguntas Frequentes</p>
+            </div>
+        </div>
+   </div>
+   <p class="copyr">Victoria Lobato Ribeiro - Desenvolvimento de Sistemas 2022</p>
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>

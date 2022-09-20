@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Saira+Condensed:wght@100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*
+{
+    text-decoration: none; /* Remover sublinhado dos links href */
+    margin: 0;
+}
+
+body
+{
+    font-family: monospace;    
+    color: black;
+    background-color:white;
+    font-family: 'noto sans', sans-serif;
+    box-sizing: border-box;
+
+    overflow-x: hidden; /* Oculta o Scroll Horizontal */
+}
+
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*====| Navbar |====*/
+.toptxt
+{
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.navbar
+{
+    z-index: 4;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    user-select: none;
+    position: fixed;
+    width: 100%;
+}
+
+.logo
+{
+    text-align: center;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight:bold;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    font-size: 20px;
+    background: white;
+
+    margin: -15px 0;
+}
+
+.shop
+{
+    font-size: 26px;
+    color: #101010;
+    cursor: pointer;
+    position: absolute;
+}
+
+.shop a
+{
+    position: relative;
+    color: black;
+    left: 1720px;
+    top: -40px;
+}
+
+.shop span
+{
+    font-family: sans-serif;
+    padding-left: 4px;
+    position: relative;
+    top: -2px;
+}
+
+.navbar .menu
+{
+    margin: -1px;
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.navbar .max-width
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+    z-index: 2;
+}
+
+.navbar .menu li a
+{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: color 0.3s ease;
+}
+
+/* Cor de destaque ao passar mouse */
+.navbar .menu li a:hover
+{
+    text-decoration: underline;
+}
+
+/*====| Home |====*/
+.home
+{
+    background-color: #6A6A6A;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.home .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .banner
+{
+    position: relative;
+    left: 100px;
+    top: -158px;
+}  
+
+
+.home .banner img
+{
+    width: 150%;
+}
+
+.home .text-box
+{
+    background: black;
+    padding: 50px;
+}
+
+.home .text-box .text3
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.home .text-box .text2
+{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home .text-box .text1
+{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.home .text-box i
+{
+    position: relative;
+    top: 3px;
+}
+
+.home .text-box a
+{
+    display: inline-block;
+    background: #000000;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 12px 36px; /*espaçamento da borda do texto*/
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+    transition: color 0.3s ease;
+}
+.home .text-box a:hover
+{
+    color:#000000;
+    background:white;
+}
+
+/*====| Elementos em Comum |====*/
+.about,
+.campanhas, 
+.form,
+.skills
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.about .about-content, 
+.topics .topics-content,
+.form .form-content,
+.skills .skills-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section
+{
+    padding: 100px 0; /*Espaço entre cada seção*/
+}
+
+section .title
+{
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+
+section .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+
+/*====| Services |====*/
+.serv .info-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serv .info-card .info-uni
+{
+    padding: 0 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 100;
+    width: 200px;
+    height: 0;
+}
+
+.serv .info-card .info-uni i
+{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.serv .info-card .info-uni span
+{
+    font-weight: bold;
+}
+
+
+/*====| Topics |====*/
+.topics
+{
+    margin-top: -50px;
+}
+
+.topic-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-card .topic-uni
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.topic-card .topic-uni p
+{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: -500px;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topic-uni a
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    top: -480px;
+    background: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    padding: 8px 26px; /*espaçamento da borda do texto*/
+    margin-top: 20px;
+    border: 2px solid white;
+    transition: color 0.3s ease;
+}
+
+.topic-uni a:hover
+{
+    color: white;
+    background: none;
+}
+
+/*====| Sobre |====*/
+.about .max-width
+{
+    margin-top: -300px;
+}
+
+.about .about-content
+{
+    margin-top: -40px;
+}
+
+.about .about-content .products
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.about .about-content .products-card
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.about .about-content .products img
+{
+    width: 90%;
+    margin: 20px;
+}
+
+.about .about-content .products img:hover
+{
+    cursor: pointer;
+}
+
+.about .about-content .products p
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about .about-content .products span
+{
+    font-weight: bold;
+}
+
+.about .about-content .info
+{
+    justify-content: center;
+}
+
+.about .about-content a
+{
+    background: #000000;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+    color: white;
+    padding: 8px 16px; /*espaçamento da borda do texto*/
+    margin-top: 20px;
+    border: 2px solid #000000;
+    transition: color 0.3s ease;
+}
+
+.about .about-content a:hover
+{
+    color:#000000;
+    background: none;
+}
+
+.products .more-txt
+{
+    position:absolute;
+    bottom: 140px;
+    left: -26px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.products .products-uni:hover .more-txt
+{
+    opacity: 1;
+}
+
+.products .more-txt p
+{
+    z-index: 2;
+    color: white;
+    text-align: justify;
+    position: relative;
+    top: 320px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.products .more-txt span
+{
+    background: black;
+    padding: 10px;
+}
+
+.products .more-txt a
+{
+    position: relative;
+    top: 320px;
+    left: 144px;
+    z-index: 2;
+    background: white;
+    border: 1px solid #ffffff;
+    color: black;
+    font-weight: 500;
+}
+
+/*====| Linhas |====*/
+.linhas .linha-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.linhas .linha-content img
+{
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.linhas .linha-content img:hover
+{
+    transform: scale(1.1);
+}
+
+/*====| Contato |====*/
+.footer
+{
+    background-color: #101010;
+    color: rgb(255, 255, 255);
+}
+
+.footer .contact-union
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.newsletter
+{
+    position: relative;
+
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 50px;
+}
+
+.newsletter p
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.card
+{
+    margin: 30px 0;
+}
+
+.card h2
+{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.card-uni
+{
+    position: relative;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.card-uni label
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s;
+    color: white;
+}
+
+.card-uni input
+{  
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.card-uni input:focus ~ label
+{
+    opacity: 0;
+}
+
+.card p
+{
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.card button
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    width: 100%;
+    height: 34px;
+
+    margin-bottom: 40px;
+}
+
+.card button:hover
+{
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.card button span
+{
+    position: relative;
+    bottom: 2px;
+}
+
+.networks a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.networks a:hover
+{
+    text-decoration: underline;
+}
+
+.contact-union .desc
+{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+
+.contact-union .desc .desc-uni
+{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+.contact-union .desc .desc-uni p
+{
+    text-align: start;
+}
+
+.contact-union .desc .desc-uni span
+{
+    font-weight: bold;
+}
+
+.contact-union .desc .desc-uni p:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.footer .copyr
+{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}

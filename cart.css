@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Saira+Condensed:wght@100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*
+{
+    text-decoration: none; /* Remover sublinhado dos links href */
+    margin: 0;
+}
+
+body
+{
+    font-family: monospace;    
+    color: black;
+    background-color:white;
+    font-family: 'noto sans', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*====| Navbar |====*/
+.toptxt
+{
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.navbar
+{
+    z-index: 4;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    user-select: none;
+    position: fixed;
+    width: 100%;
+}
+
+.logo
+{
+    text-align: center;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight:bold;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    font-size: 20px;
+    background: white;
+
+    margin: -15px 0;
+}
+
+.shop
+{
+    font-size: 26px;
+    color: #101010;
+    cursor: pointer;
+    position: absolute;
+}
+
+.shop a
+{
+    position: relative;
+    color: black;
+    left: 1720px;
+    top: -40px;
+}
+
+.shop span
+{
+    font-family: sans-serif;
+    padding-left: 4px;
+    position: relative;
+    top: -2px;
+}
+
+.navbar .menu
+{
+    margin: -1px;
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.navbar .max-width
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+    z-index: 2;
+}
+
+.navbar .menu li a
+{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: color 0.3s ease;
+}
+
+/* Cor de destaque ao passar mouse */
+.navbar .menu li a:hover
+{
+    text-decoration: underline;
+}
+
+/*====| Elementos em Comum |====*/
+.cart
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.topics .content,
+.tops .content, 
+.short .content, 
+.vestido .content, 
+.calcado .content, 
+.chocker .content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section
+{
+    padding: 70px 0; /*Espaço entre cada seção*/
+}
+
+.footer
+{
+    padding: 100px 0;
+}
+
+section .title
+{
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+
+section .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+
+/*====| Cart |====*/
+.item-container
+{
+   max-width: 650px;
+   justify-content: space-around;
+   margin: 0 auto;
+   margin-top: 50px;
+   font-family: 'Saira Condensed', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 500;
+   font-size: 20px;
+}
+
+.item-container ion-icon
+{
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.item-header
+{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+    
+}
+
+.item-title
+{
+    width: 45%;
+    border-bottom: 1px solid lightgray;
+}
+
+.price
+{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.quantity
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.total
+{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.product
+{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon
+{
+    font-size: 30px;
+}
+
+.items
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items img
+{
+    width: 40%;
+}
+
+.basketTotalContainer
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle
+{
+    width: 30%;
+}
+
+.basketTotal
+{
+    width: 10%;
+}
+
+/*====| Topics |====*/
+.topics .content
+{
+    margin: 50px;
+}
+
+.topics .text
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.topic-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-card .topic-uni
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.topics .topic-card img
+{
+    width: 600px;
+    height: 799px;
+}
+
+.topic-card .topic-uni p
+{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: -520px;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topics .content .topic-uni a
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    top: -500px;
+    background: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    padding: 8px 26px; /*espaçamento da borda do texto*/
+    margin-top: 20px;
+    border: 2px solid white;
+    transition: color 0.3s ease;
+}
+
+.topics .content .topic-uni a:hover
+{
+    color: white;
+    background: none;
+}
+
+.topics .content .info
+{
+    position: relative;
+    top: -80px;
+}
+
+/*====| TOPS |====*/
+.products
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.products img
+{
+    width: 90%;
+    margin: 20px;
+}
+
+.products img:hover
+{
+    cursor: pointer;
+   /* filter: brightness(.4); */
+}
+
+.products p
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+}
+
+.products span
+{
+    font-weight: bold;
+}
+
+.content .info
+{
+    justify-content: center;
+}
+
+.content .info a
+{
+    background: #000000;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+    color: white;
+    padding: 8px 16px; /*espaçamento da borda do texto*/
+    margin-top: 20px;
+    border: 2px solid #000000;
+    transition: color 0.3s ease;
+    position: relative;
+    top: 30px;
+}
+
+.content .info a:hover
+{
+    color:#000000;
+    background: none;
+}
+
+.products-uni
+{
+    position: relative;
+}
+
+.cart-btn
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.image:hover .cart-btn
+{
+    opacity: 1;
+}
+
+.cart-btn i
+{
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 90%;
+    background: rgb(255, 255, 255);
+}
+
+/*====| Contato |====*/
+.footer
+{
+    background-color: #101010;
+    color: rgb(255, 255, 255);
+}
+
+.footer .contact-union
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.newsletter
+{
+    position: relative;
+
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 50px;
+}
+
+.newsletter p
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.card
+{
+    margin: 30px 0;
+}
+
+.card h2
+{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.card-uni
+{
+    position: relative;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.card-uni label
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s;
+    color: white;
+}
+
+.card-uni input
+{  
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.card-uni input:focus ~ label
+{
+    opacity: 0;
+}
+
+.card p
+{
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.card button
+{
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    width: 100%;
+    height: 34px;
+
+    margin-bottom: 40px;
+}
+
+.card button:hover
+{
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.card button span
+{
+    position: relative;
+    bottom: 2px;
+}
+
+.networks a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.networks a:hover
+{
+    text-decoration: underline;
+}
+
+.contact-union .desc
+{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+
+.contact-union .desc .desc-uni
+{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+.contact-union .desc .desc-uni p
+{
+    text-align: start;
+}
+
+.contact-union .desc .desc-uni span
+{
+    font-weight: bold;
+}
+
+.contact-union .desc .desc-uni p:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.footer .copyr
+{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
